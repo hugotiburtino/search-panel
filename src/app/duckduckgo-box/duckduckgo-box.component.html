@@ -1,0 +1,9 @@
+<div class="d-flex flex-column">
+    <div>DuckDuckGo</div>
+    <ul *ngFor="let entry of entries" 
+         class="entries-box">
+        <li *ngIf="entry.Result"
+            [innerHTML]="entry.Result">
+        </li>
+    </ul>
+</div>
