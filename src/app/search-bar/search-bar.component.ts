@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DuckDuckGoService } from '../services/duck-duck-go.service';
 import { GoogleService } from '../services/google.service';
-import { BingService } from '../services/bing.service';
+// TODO: import { BingService } from '../services/bing.service';
 
 @Component({
   selector: 'app-search-bar',
@@ -13,8 +13,7 @@ export class SearchBarComponent implements OnInit {
   userinput: string;
 
   constructor(private duckDuckGoService: DuckDuckGoService,
-    private googleService: GoogleService,
-    private bingService: BingService) { }
+              private googleService: GoogleService) { }
 
   ngOnInit(): void {
   }
@@ -26,6 +25,6 @@ export class SearchBarComponent implements OnInit {
   search() {
       this.duckDuckGoService.query(this.userinput);
       this.googleService.query(this.userinput);
-      this.bingService.query(this.userinput);
+  // TODO: this.bingService.query(this.userinput);
   }
 }
