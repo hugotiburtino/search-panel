@@ -1,5 +1,11 @@
-<div class="container" >
-  <input class="user-text row" type="text"
-            [(ngModel)]="userinput">
-  <input type="button" value="Search" (click)="search()">
+<div class="input-group">
+  <input type="text" class="form-control" 
+   placeholder="What are you looking for?"
+   [(ngModel)]="userinput"
+   (keyup.enter)="search()">
+  <div class="input-group-append">
+    <button type="button" class="btn btn-primary" (click)="search()">
+      Go
+    </button>
+  </div>
 </div>

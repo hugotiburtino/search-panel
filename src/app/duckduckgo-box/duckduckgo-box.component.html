@@ -1,9 +1,6 @@
-<div class="d-flex flex-column">
-    <div>DuckDuckGo</div>
-    <ul *ngFor="let entry of entries" 
-         class="entries-box">
-        <li *ngIf="entry.Result"
-            [innerHTML]="entry.Result">
-        </li>
-    </ul>
-</div>
+<h2>DuckDuckGo</h2>
+<ul *ngFor="let entry of entries" class="list-group">
+    <li *ngIf="entry.Result"
+        [innerHTML]="entry.Result"
+        class="list-group-item"></li>
+</ul>

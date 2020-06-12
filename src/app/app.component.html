@@ -1,26 +1,28 @@
-<header>  
-  <h1>{{title}}</h1>
-</header>
-<div class="main-container">
+<header class="jumbotron jumbotron-fluid text-center">
   <div class="container">
-    <div class="row">
-      <!-- Start Search bar -->
-      <app-search-bar></app-search-bar>
-      <!-- End Search bar -->
+    <h1>{{title}}</h1>
+    <p>Query different search engines at one go</p>
+  </div>
+</header>
+<div class="container-fluid">
+  <div class="">
+    <!-- Start Search bar -->
+    <app-search-bar></app-search-bar>
+    <!-- End Search bar -->
+  </div>
+  <div class="row engines-panel">
+    <div class="col">
+      <!-- Start DuckDuckGo Box -->
+      <app-duckduckgo-box></app-duckduckgo-box>
+      <!-- End DuckDuckGo Box -->
     </div>
-    <div class="row">
-      <div class="col">
-        <!-- Start DuckDuckGo Box -->
-        <app-duckduckgo-box></app-duckduckgo-box>
-        <!-- End DuckDuckGo Box -->
-      </div>
-      <div class="col">
-        <!-- Start Google Box -->
-        <app-google-box></app-google-box>
-        <!-- End Google Box -->
-      </div>
-      <!--div class="col">
-        <app-bing-box></app-bing-box>
-      </div-->
+    <div class="col">
+      <!-- Start Google Box -->
+      <app-google-box></app-google-box>
+      <!-- End Google Box -->
     </div>
+    <!--div class="col">
+      <app-bing-box></app-bing-box>
+    </div-->
+  </div>
 </div>

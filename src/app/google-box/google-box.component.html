@@ -1,7 +1,4 @@
-<div class="d-flex flex-column">
-    <div>Google</div>
-    <ul *ngFor="let entry of entries">
-        <li [innerHTML]="entry.description">
-        </li>
-    </ul>
-</div>
+<h2>Google</h2>
+<ul *ngFor="let entry of entries" class="list-group">
+    <li [innerHTML]="entry.description" class="list-group-item"></li>
+</ul>
