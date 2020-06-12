@@ -1,4 +1,6 @@
-export interface DuckDuckGoRes {
+import { SearchResponse } from './SearchResponse';
+
+export class DuckDuckGoRes implements SearchResponse {
     RelatedTopics: [
       {
           Result:string,
