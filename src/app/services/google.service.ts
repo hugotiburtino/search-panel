@@ -1,22 +1,36 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { GoogleResponse } from '../lib/GoogleResponse';
+import { SearchService } from '../lib/SearchService';
 
+/**
+ * Service that handles request to the Google API 
+ */
 @Injectable({
   providedIn: 'root'
 })
-export class GoogleService {
+export class GoogleService implements SearchService {
 
+  /** Emitter that notifies the Googlebox in order to display entries */
   emitter: EventEmitter<GoogleResponse> = new EventEmitter();
   
   headers = new HttpHeaders({
     "x-rapidapi-host": "google-search3.p.rapidapi.com",
-    "x-rapidapi-key": "", // put your KEY here
+    "x-rapidapi-key": "", // put your Rapidapi key her
     "useQueryString": "true"
   })
  
   constructor(private http: HttpClient) { }
 
+  /**
+   * Makes request to Google API
+   * 
+   * At current version it uses the Rapidapi, 
+   * so be sure to insert your secret key {@link headers}
+   * 
+   * 
+   * @param userinput The text the user wants to search
+   */
   query(userinput: string) {
     const requestparams = new HttpParams().set('q', userinput).set('max_results', '10');
     this.http.request<GoogleResponse>('GET',
