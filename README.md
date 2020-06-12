@@ -22,6 +22,10 @@ A panel of results from different search engines
 * Angular 9
 * DuckDuckGo Instant Answer API
 * Google Search API from Rapidapi
+* Bootstrap 4
 
 ## Version
-0.1.0 - beta
+0.1.1 - beta
+
+## Credits
+Icon made by [bqlqn](https://www.flaticon.com/authors/bqlqn) availabe at Flaticon
