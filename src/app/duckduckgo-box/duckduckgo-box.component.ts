@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { DuckDuckGoService } from '../services/duck-duck-go.service';
 import { DuckDuckGoRes } from '../lib/DuckDuckGoRes';
 
+/**
+ * Class that handles box where entries from
+ * DuckDuckGo are displayed
+ */
 @Component({
   selector: 'app-duckduckgo-box',
   templateUrl: './duckduckgo-box.component.html',
@@ -9,6 +13,7 @@ import { DuckDuckGoRes } from '../lib/DuckDuckGoRes';
 })
 export class DuckduckgoBoxComponent implements OnInit {
 
+  /** Results from the search */
   entries: DuckDuckGoRes[];
 
   constructor(private service: DuckDuckGoService) { }

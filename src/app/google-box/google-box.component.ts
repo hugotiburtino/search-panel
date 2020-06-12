@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { GoogleService } from '../services/google.service';
 import { GoogleResponse } from '../lib/GoogleResponse';
 
+/**
+ * Class that handles box where entries from Google
+ * are displayed
+ */
 @Component({
   selector: 'app-google-box',
   templateUrl: './google-box.component.html',
@@ -9,7 +13,8 @@ import { GoogleResponse } from '../lib/GoogleResponse';
 })
 export class GoogleBoxComponent implements OnInit {
 
-  entries: GoogleResponse[]; // change type
+  /** Results from the search */
+  entries: GoogleResponse[];
 
   constructor(private googleService: GoogleService) { }
 
