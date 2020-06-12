@@ -20,7 +20,7 @@ A panel of results from different search engines
 
 ## Built with
 * Angular 9
-* DuckDuckGo API
+* DuckDuckGo Instant Answer API
 * Google Search API from Rapidapi
 
 ## Version
