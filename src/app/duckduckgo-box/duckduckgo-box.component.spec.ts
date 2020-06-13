@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DuckduckgoBoxComponent } from './duckduckgo-box.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('DuckduckgoBoxComponent', () => {
   let component: DuckduckgoBoxComponent;
@@ -8,7 +9,8 @@ describe('DuckduckgoBoxComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DuckduckgoBoxComponent ]
+      declarations: [ DuckduckgoBoxComponent ],
+      imports: [ HttpClientModule ]
     })
     .compileComponents();
   }));

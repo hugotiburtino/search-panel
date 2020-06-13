@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GoogleBoxComponent } from './google-box.component';
+import { GoogleService } from '../services/google.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 describe('GoogleBoxComponent', () => {
   let component: GoogleBoxComponent;
@@ -8,7 +10,8 @@ describe('GoogleBoxComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GoogleBoxComponent ]
+      declarations: [ GoogleBoxComponent ],
+      imports: [ HttpClientModule ]
     })
     .compileComponents();
   }));
