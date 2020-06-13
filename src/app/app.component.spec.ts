@@ -19,13 +19,13 @@ describe('AppComponent', () => {
   it(`should have as title 'search-panel'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('search-panel');
+    expect(app.title).toEqual('Search Panel');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('search-panel app is running!');
+    expect(compiled.querySelector('.container h1').textContent).toContain('Search Panel');
   });
 });
