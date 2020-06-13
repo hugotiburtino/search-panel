@@ -25,7 +25,7 @@ A panel of results from different search engines
 * Bootstrap 4
 
 ## Version
-0.1.1 - beta
+0.1.2 - beta
 
 ## Credits
 Icon made by [bqlqn](https://www.flaticon.com/authors/bqlqn) availabe at Flaticon
