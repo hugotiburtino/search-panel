@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  RAPIDAPI_HOST: 'google-search3.p.rapidapi.com',
+  RAPIDAPI_KEY: '' // put your Rapid Key here
 };
 
 /*

@@ -15,7 +15,7 @@ A panel of results from different search engines
 1. `git clone`
 2. `cd search-panel`
 3. `npm install`
-4. Add your Rapidapi Key at `src/app/services/google.service.ts`
+4. Add your Rapidapi Key at `src/environments/environment.ts`
 5. `ng serve` and open browser on `localhost:4200`
 
 ## Built with
