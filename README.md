@@ -29,3 +29,6 @@ A panel of results from different search engines
 
 ## Credits
 Icon made by [bqlqn](https://www.flaticon.com/authors/bqlqn) availabe at Flaticon
+
+## Copyright Issues
+If you plan to use this project in production, **even for non-commercial uses**, you have to get written approval from DuckDuckGo, as they write [here](https://duckduckgo.com/api).
