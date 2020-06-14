@@ -1,4 +1,7 @@
-<h2>DuckDuckGo</h2>
+<h2>
+    <img src="../../assets/ddglogo.ico" alt="DuckDuckGo's Logo">
+    DuckDuckGo
+</h2>
 <ul *ngFor="let entry of entries" class="list-group">
     <li *ngIf="entry.Result"
         [innerHTML]="entry.Result"
