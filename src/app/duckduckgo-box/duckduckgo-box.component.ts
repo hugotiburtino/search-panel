@@ -20,7 +20,7 @@ export class DuckduckgoBoxComponent implements OnInit {
 
   ngOnInit(): void {
     this.service.emitter.subscribe(data => {
-        this.entries = data.RelatedTopics;
+        this.entries =  data.RelatedTopics;
       });
   }
 

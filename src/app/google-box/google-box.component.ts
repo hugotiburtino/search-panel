@@ -21,7 +21,7 @@ export class GoogleBoxComponent implements OnInit {
   ngOnInit(): void {
     this.googleService.emitter.subscribe(data => {
         this.entries = data.results;
-      })
+      });
   }
 
 }

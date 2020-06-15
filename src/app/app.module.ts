@@ -26,7 +26,7 @@ import { DuckDuckGoService } from './services/duck-duck-go.service';
   providers: [
     GoogleService,
     DuckDuckGoService
-  ], 
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

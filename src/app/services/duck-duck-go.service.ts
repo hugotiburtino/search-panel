@@ -23,7 +23,7 @@ export class DuckDuckGoService implements SearchService {
    * @param userinput User's text for the search
    */
   query(userinput: string) {
-    this.http.get<any>('https://api.duckduckgo.com/?q=' + userinput + 
+    this.http.get<any>('https://api.duckduckgo.com/?q=' + userinput +
                        '&format=json' + '&t=' + environment.APP_NAME)
       .subscribe(res => {
         this.emitter.emit(res);

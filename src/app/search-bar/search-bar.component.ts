@@ -24,7 +24,7 @@ export class SearchBarComponent implements OnInit {
    */
   search() {
       this.duckDuckGoService.query(this.userinput);
-      this.googleService.query(this.userinput);
+     // this.googleService.query(this.userinput);
   // TODO: this.bingService.query(this.userinput);
   }
 }
